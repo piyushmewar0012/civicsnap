@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#080913] text-slate-300 font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Low-contrast dark mode text rules */
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-slate-100;
+  }
+}
+
+/* Tactile Grain Texture Overlay */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(15, 18, 37, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(139, 92, 246, 0.16);
+  box-shadow: 0 8px 32px 0 rgba(10, 12, 30, 0.45);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(22, 27, 53, 0.75);
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.2);
+}
+
+/* Buttons that fade on hover */
+.btn-fade {
+  transition: opacity 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+.btn-fade:hover {
+  opacity: 0.75;
+}
+.btn-fade:active {
+  transform: scale(0.98);
+}
+
+/* Coloured Left Border Cards */
+.card-left-purple {
+  border-left: 4px solid #a855f7 !important;
+}
+.card-left-blue {
+  border-left: 4px solid #3b82f6 !important;
+}
+.card-left-indigo {
+  border-left: 4px solid #6366f1 !important;
+}
+.card-left-emerald {
+  border-left: 4px solid #10b981 !important;
+}
+.card-left-amber {
+  border-left: 4px solid #f59e0b !important;
+}
+
+/* Low-contrast dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080913;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f243d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38426d;
+}
