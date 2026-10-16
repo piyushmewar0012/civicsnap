@@ -71,3 +71,13 @@ Piyush mewar
 - **Styling:** Tailwind CSS with custom civic aesthetic
 - **Icons:** Lucide React
 - **AI Engine:** Dual-mode (Instant PRD-compliant local heuristic reasoning + optional Google Gemini Multimodal Vision API integration)
+<br>
+team members
+<br>
+Rahul raj
+<br>
+Varnit Surmaan
+<br>
+Rohan negi
+<br>
+Piyush mewar
