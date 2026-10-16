@@ -56,6 +56,16 @@ CivicLens includes built-in 1-click test cases corresponding to the PRD Success 
 ---
 
 ## 🛠 Tech Stack
+<br>
+team members
+<br>
+Rahul raj
+<br>
+Varnit Surmaan
+<br>
+Rohan negi
+<br>
+Piyush mewar
 - **Framework:** React 18 with TypeScript
 - **Bundler:** Vite 6
 - **Styling:** Tailwind CSS with custom civic aesthetic
